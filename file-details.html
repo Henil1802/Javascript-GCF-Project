@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print2Door</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<!-- File Details Page -->
+<div id="fileDetails" class="container" style="display: none;">
+    <h1>File Details</h1>
+    <p>File Name: <span id="fileName">example.pdf</span></p>
+    <p>Number of Pages: <input type="text" id="pageCount" placeholder="Enter number of pages"></p>
+    <label for="printQuality">Print Quality:</label>
+    <select id="printQuality">
+        <option value="draft">Draft</option>
+        <option value="standard">Standard</option>
+        <option value="high-quality">High Quality</option>
+    </select>
+    <label for="paperThickness">Paper Thickness:</label>
+    <select id="paperThickness">
+        <option value="standard">Standard</option>
+        <option value="premium">Premium</option>
+    </select>
+    <label for="cover">Cover:</label>
+    <select id="cover">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+    </select>
+    <label for="binding">Binding Type:</label>
+    <select id="binding">
+        <option value="none">None</option>
+        <option value="spiral">Spiral</option>
+        <option value="stapler">Stapler</option>
+    </select>
+    <p>Total Cost: ₹<span id="totalCost">0</span></p>
+    <button class="button" onclick="calculateCost()">Calculate Cost</button>
+    <button class="button" onclick="reviewBeforePayment()">Proceed to Payment</button>
+</div>
+
+<script src="assets/scripts.js"></script>
+</body>
+</html>
